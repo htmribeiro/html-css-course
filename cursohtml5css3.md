@@ -91,7 +91,11 @@ Está focado na interação do código com o servidor.
 
 ## #C04A02 - Seu primeiro código HTML  
 
-`<!DOCTYPE html>` - indica
+Criamos o primeiro documento HTML
+Para criarmos a estrutura básica do HTML, podemos digitar o sinal de exclamação **`!`** e em seguida precione a tecla **Enter**, e o código é criado automaticamente.
+
+`<!DOCTYPE html>` - Essa linha de código, indica que é um documento em HTML5.  
+> *Observação: demais partes do código se encontram no pdf da aula 04.*  
 
 ## #C05A01 - Parágrafos e Quebras
 
