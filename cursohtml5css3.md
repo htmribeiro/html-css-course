@@ -140,6 +140,8 @@ Para uma pesquisa mais precisa e atualizada, acesse o site da [emojipedia.org](h
   - &#x - (representa um código hexadecimal) seguido do **Codepoint** e finaliza com o ponto-e-vírgula.
   - &#x1F596;  
 
+### Desafio d001
+> [Resolução](exercicios\ex002\index.html)
 ## #C06A01 - Direitos Autorais
 
 ### Sites que contém imagens livres para uso
