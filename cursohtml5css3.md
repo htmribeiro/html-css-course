@@ -113,20 +113,23 @@ Para criarmos a estrutura básica do HTML, podemos digitar o sinal de exclamaç�
 
 ### Símbolos
 Existem alguns outros símbolos que podem ser exibidos usando códigos. Esses códigos são chamados de **HTML Entities**, basta uma breve consulta para descobrir quais são as opções. Abaixo uma tabela com outras opções.  
-> `\&reg;` - Marca registrada  
-> `\&copy;` - Corporate  
-> `&trade;` - Trade Mark (marca registrada)  
-> `&euro;` - moeda euro  
-> `&pound;` - moeda libra (pound)  
-> `&yen;` - moeda yen  
-> `&cent;` - moeda cent dolar  
-> `&empty;` - Vazio  
-> `&sum;` - Soma  
-> `&Delta;` - Símbolo de Delta  
-> `&larr;` - Seta esquerda  
-> `&uparrow; ou &uarr;` - Seta acima  
-> `&rarr;` - Seta direita  
-> `&darr;` - Seta baixo  
+
+**Entity** | **Descrição**
+:--:|:--:  
+**`\&reg;`** | Marca registrada  
+**`\&copy;`** | Corporate  
+**`&trade;`** | Trade Mark (marca registrada)  
+**`&euro;`** | moeda euro  
+**`&pound;`** | moeda libra (pound)  
+**`&yen;`** | moeda yen  
+**`&cent;`** | moeda cent dolar  
+**`&empty;`** | Vazio  
+**`&sum;`** | Soma  
+**`&Delta;`** | Símbolo de Delta  
+**`&larr;`** | Seta esquerda  
+**`&uparrow;`** <br> ou<br> **`&uarr;`** | Seta acima  
+**`&rarr;`** | Seta direita  
+**`&darr;`** | Seta baixo  
 
 [!Tips]: Acesse o [W3Schools](https://www.w3schools.com/charsets/ref_utf_symbols.asp), na área de Misc Symbols, para uma referência com vários símbolos e seus códigos.
 ### Emoji's
