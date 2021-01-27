@@ -186,6 +186,7 @@ Os mecanismos de busca como o Google **PENALIZAM** sites lentos e pesados, retir
 ### Carga de imagem da internet (externa ao projeto)
 >```html
 ><img src="https://www.dondi.net/port/skills/js.png" alt="imagem logotipo do JavaScript">
+> <!-- Utilizando uma URL dentro do parâmetro src="" -->
 >```
 
 ## #C06A05 - Como mudar o favicon de um site
