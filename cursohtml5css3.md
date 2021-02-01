@@ -291,15 +291,15 @@ Sendo assim, em HTML5, vemos de forma bastante evidênte a presença do chamado 
 > **O intuito é deixar a apresentação gráfica por conta das CSS.**
 
 
-# modulo02
-# modulo03
-# modulo04
-# modulo05
-# modulo06
-# modulo07
-# modulo08
-# modulo09
-# modulo10
-# modulo11
-# modulo12
-# modulo13
+# Módulo 02
+# Módulo 03
+# Módulo 04
+# Módulo 05
+# Módulo 06
+# Módulo 07
+# Módulo 08
+# Módulo 09
+# Módulo 10
+# Módulo 11
+# Módulo 12
+# Módulo 13
