@@ -237,23 +237,30 @@ Porém, nem todo navegador é compatível com o formato **SVG** e acaba causando
     2.1.2 Os regimes territoriais especiais  
 
 ### Entendendo os níveis dos títulos
-
-### Fazendo um exercício
-
-### Tags para o título principal
-
-### Pode ter mais de um H1 em uma página?
-
-### Mais um nível dos títulos
-
-### Gerador de Lorem Ipsum
-
+> Página 3 da apostíla  
+Títulos em HTML são conhecidos como *Headings* (que, traduzindo do Inglês, significa *título* mesmo).
 ### Os títulos vão de H1 até H6
+Os títulos possuem **SEIS NÍVEIS** de hierarquia, e esses níveis servem parar organizar nosso conteúdo.  
+Para isso usamos as tags \<h1>, \<h2>, \<h3>, \<h4>, \<h5>, \<h6> para demarcar nossos títulos
 
+**Título Principal da matéria:** 
+- "Falta de sintonia"  
+### Tags para o título principal
+>```html
+> <h1></h1>
+>```
 ### H1 é letra grande? H6 é letra pequena?
-
-### Como ser avisado quando sair aula nova?
-### Ficou um pouco confuso(a)?
+> Isso não tem fundamento algum!  
+Um `<h1>` significa que esse é um assunto principal  
+Já o `<h2>` significa que esse é um sub-assunto de `<h1>`  
+O `<h3>` significa que esse é um sub-assunto do `<h2>`  
+E assim sucessivamente até o `<h6>`.
+### Pode ter mais de um H1 em uma página?
+> Ele é um tema principal, e se a sua página tem vários temas principais, use vários H1 sem medo.
+### Gerador de Lorem Ipsum
+>```html
+><p>lorem</p>
+>```
 
 # modulo02
 # modulo03
