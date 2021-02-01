@@ -268,20 +268,20 @@ E assim sucessivamente até o `<h6>`.
 Analisando a frase acima percebemos que uma palavra pode ter **forma** e **significado**, e que a **semântica** dá mais valor ao significado.
 ### Comparando HTML4 e HTML5
 Na HTML4, tinham tags como:
-- \<b> que colocava um texto em negrito
-- \<u> que colocava o termo sublinhado
-- \<blink> que fazia o texto piscar  
+- `<b>` que colocava um texto em negrito
+- `<u>` que colocava o termo sublinhado
+- `<blink>` que fazia o texto piscar  
 
 Essas eram tags que representavam apenas uma **forma**.
 > Exemplo:
->*`"Juvenal era um sujeito de muita sorte. E já começou de pequeno, onde morou na \<u>Rua Marquês de Lira Filho\</u>, um local de fácil acesso ao Centro da cidade."`*  
+>*`"Juvenal era um sujeito de muita sorte. E já começou de pequeno, onde morou na <u>Rua Marquês de Lira Filho</u>, um local de fácil acesso ao Centro da cidade."`*  
 
 Essa seria uma maneira de determinar somente um formato visual para chamar atenção para o endereço onde o cara nasceu. O sublinhado é apenas uma **forma**, sem **significado** explícito.  
 </br>
 
 Já a HTML5 chegou com o conceito de valorizar a **semântica**, logo suas tags tentam levar um **significado** embutido muito forte.
 > Exemplo:
->*`"Juvenal era um sujeito de muita sorte. E já começou de pequeno, onde morou na \<address>Rua Marquês de Lira Filho\</address>, um local de fácil acesso ao Centro da cidade."`*  
+>*`"Juvenal era um sujeito de muita sorte. E já começou de pequeno, onde morou na <address>Rua Marquês de Lira Filho</address>, um local de fácil acesso ao Centro da cidade."`*  
 
 Note que agora, usamos a tag `<address>` para dar um **significado** ao destaque que fizemos.  
 </br>
@@ -290,6 +290,35 @@ Sendo assim, em HTML5, vemos de forma bastante evidênte a presença do chamado 
 
 > **O intuito é deixar a apresentação gráfica por conta das CSS.**
 
+## #C08A02 – Negrito e Itálico do jeito certo
+> Existe um documento oficial do Consórcio da World Wide Web (W3C) que é atualizado constantemente com as tags que estão ficando obsoletas e algumas substituição desejáveis que devemos fazer.
+
+> - [Diferenças entre HTML4 e 5](https://www.w3.org/TR/html5-diff/#absent-attributes)
+> - [Elementos obsoletos na HTML5](https://dev.w3.org/html5/pf-summary/obsolete.html)
+
+### **Negrito** e *Itálico*
+Vamos ver agora algumas formatações bem usadas das últimas versões da linguagem, começando pelos famosos **negrito** e *itálico*.
+
+Como vimos anteriormente, existem as tags `<b>` e `<i>` para essa tarefa, mas elas não possuem significado e focam apenas na forma, sendo assim, são pouco semânticos.  
+Sendo assim, passaremos a utilizar as tags `<strong>` e `<em>` para realizar essas mesmas formatações visuais, só que agora com sentido.
+
+A tag `<strong>` significa que o termo delimitado possui força dentro da frase. Logo, ele aparecerá em **negrito**.
+
+Já a tag `<em>` significa que queremos dar **ênfase** (do Inglês *emphasis*) ao termo. Logo, ele aparecerá em *itálico*.
+
+> Note que, ao usar `<strong>` e `<em>` no lugar de `<b>` e `<i>`, damos mais significado aos nossos termos e conteúdos. Como eles vão ser representados visualmente (formal), vai depender das nossas folhas de estilo CSS.
+
+### Usando marca texto
+Para fazer essas marcas em HTML5, usamos a tag `<mark>...</mark>` para delimitar o texto que queremos demarcar, como se estivéssemos usando uma caneta marcador.  
+
+> **COMO FAÇO PARA MUDAR A COR DA CANETA?** Com usar outras cores? Contando que as configurações sejam especificadas nas folhas de estilo CSS.
+
+### Tags "Mortas"
+- `<font>` e `<center>`
+- `<applet>` e `<blink>`
+- `<b>`
+- `<big>`
+- `<strike>`
 
 # Módulo 02
 # Módulo 03
