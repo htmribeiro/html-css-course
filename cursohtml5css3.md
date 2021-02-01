@@ -262,6 +262,35 @@ E assim sucessivamente até o `<h6>`.
 ><p>lorem</p>
 >```
 
+## #C08A01 - Semântica na HTML5 é importante
+>*`"Semântica é o significado dos vocábulos, por oposição à sua forma."`*  
+
+Analisando a frase acima percebemos que uma palavra pode ter **forma** e **significado**, e que a **semântica** dá mais valor ao significado.
+### Comparando HTML4 e HTML5
+Na HTML4, tinham tags como:
+- \<b> que colocava um texto em negrito
+- \<u> que colocava o termo sublinhado
+- \<blink> que fazia o texto piscar  
+
+Essas eram tags que representavam apenas uma **forma**.
+> Exemplo:
+>*`"Juvenal era um sujeito de muita sorte. E já começou de pequeno, onde morou na \<u>Rua Marquês de Lira Filho\</u>, um local de fácil acesso ao Centro da cidade."`*  
+
+Essa seria uma maneira de determinar somente um formato visual para chamar atenção para o endereço onde o cara nasceu. O sublinhado é apenas uma **forma**, sem **significado** explícito.  
+</br>
+
+Já a HTML5 chegou com o conceito de valorizar a **semântica**, logo suas tags tentam levar um **significado** embutido muito forte.
+> Exemplo:
+>*`"Juvenal era um sujeito de muita sorte. E já começou de pequeno, onde morou na \<address>Rua Marquês de Lira Filho\</address>, um local de fácil acesso ao Centro da cidade."`*  
+
+Note que agora, usamos a tag `<address>` para dar um **significado** ao destaque que fizemos.  
+</br>
+
+Sendo assim, em HTML5, vemos de forma bastante evidênte a presença do chamado **HTML semântico** ou **tags semânticas** ou ainda o **conteúdo semântico**.  
+
+> **O intuito é deixar a apresentação gráfica por conta das CSS.**
+
+
 # modulo02
 # modulo03
 # modulo04
