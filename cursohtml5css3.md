@@ -308,6 +308,7 @@ Já a tag `<em>` significa que queremos dar **ênfase** (do Inglês *emphasis*) 
 
 > Note que, ao usar `<strong>` e `<em>` no lugar de `<b>` e `<i>`, damos mais significado aos nossos termos e conteúdos. Como eles vão ser representados visualmente (formal), vai depender das nossas folhas de estilo CSS.
 
+## #C08A03 – Formatações adicionais em HTML
 ### Usando marca texto
 Para fazer essas marcas em HTML5, usamos a tag `<mark>...</mark>` para delimitar o texto que queremos demarcar, como se estivéssemos usando uma caneta marcador.  
 
@@ -319,6 +320,50 @@ Para fazer essas marcas em HTML5, usamos a tag `<mark>...</mark>` para delimitar
 - `<b>`
 - `<big>`
 - `<strike>`
+
+### `<small>` ainda sobrevive
+A tag `<small>` - que deixa o texto menor.
+
+### Texto deletado
+A tag `<del>`, que siginifica que o texto está ali, pode ser lido, mas deve ser desconsiderado pelo leitor.
+
+### Texto inserido
+Se colocarmos um texto qualquer dentro de `<ins> e </ins>`, estamos dizendo que o texto ali, deve ser lido e você deve prestar atenção nele.
+
+### Texto sobrescrito e subscrito
+As tags `<sub>` e `<sup>` para essa finalidade.
+
+### Trecho de código
+A tag `<code>` da HTML onde você pode delimitar seu código. A principal vantagem no uso dessa tag é o valor semântico que ela representa, indicando ao navegador que se trata de um código de computador. Porém, existe também um efeito visual, pois as letras ficam no modo mono-espaçadas (monospace), o facilita bastante a leitura do código.  
+> Analise, por exemplo, o trecho de código a seguir:  
+
+```html
+<h1>Exemplo de código em Python</h1>
+<code>
+  num = int(input("Digite um número"))
+  if num % 2 == 0:
+    print(f'O número {num} é par')
+  else:
+    print(f'O número {num} é impar')
+  print("FIM DO PROGRAMA")
+</code>
+```
+
+> Acontece que o código acima, irá mudar as letras, para que fiquem mono-espaçadas
+
+Para resolver esse problema, vamos usar uma outra tag HTML chamada `<pre>`, que mantém o texto pré-formatado, exatamente da mesma maneira na qual ele foi digitado, incluindo quebras de linhas, espaços e tabulações.
+
+```html
+<h1>Exemplo de código em Python</h1>
+<pre><code>
+  num = int(input("Digite um número"))
+  if num % 2 == 0:
+    print(f'O número {num} é par')
+  else:
+    print(f'O número {num} é impar')
+  print("FIM DO PROGRAMA")
+</code></pre>
+```
 
 # Módulo 02
 # Módulo 03
