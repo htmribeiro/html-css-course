@@ -364,6 +364,35 @@ Para resolver esse problema, vamos usar uma outra tag HTML chamada `<pre>`, que 
   print("FIM DO PROGRAMA")
 </code></pre>
 ```
+## #C08A04  – Citações e Códigos
+### Citações
+Para criar uma citação em HTML, podemos usar a tag `<q>` (do Inglês *quote*, que significa citar). O texto que estiver entre `<q> e </q>` já vai receber automaticamente as aspas, mas não terá nenhum deslocamento. Essa técnica é mais usada quando queremos uma citação no meio de um parágrafo.  
+
+Também podemos criar citações mais longas (em bloco) e que tenham um parágrafo só para si. Nesse caso, colocaremos tudo dentro de `<blockquote>` e `</blockquote>` e o texto ganha um recuo automaticamente. Podemos também colocar um link para o texto original, usando o parâmentro `cite` dentro da tag.  
+
+```html
+<blockquote cite="https://www.martinsfontespaulista.com.br/php-a-biblia-53304.aspx/p">
+  O PHP é uma linguagem para a criação de scripts para a Web do lado servidor embutidos em HTML, cujo código-font é aberto, e que é compatível com os mais importantes servidores Web (especialmente Apache).
+</blockquote>
+```
+### Abreviações
+Essa é uma novidade da HTML5 e que ajuda muito em áreas como a de Tecnologia, que usa muitas siglas e abreviações. Sempre que você quiser escrevver uma sigla, mas deixar claro ao usuário (e aos mecanismos de busca) o significado dela, use a tag `<abbr>`.
+
+```html
+<p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> para criar sites.</p>
+```
+> Quando passamos o mouse sobre a sigla abreviada, um pequeno texto aparece com o seu significado.
+
+### Texto Invertido
+A função da tag `<bdo>`é de inverter o conteúdo entre `<bdo> e </bdo>`.
+
+Para começo de conversa, BDO significa *bi-directional orerride*. Ao usar essa tag, coloque também o parametro `dir` para indicar uma das duas direções possíveis:
+- `rtl` = da direita para a esquerda (right-to-left)
+- `ltr` = da esquerda para a direita (left-to-right)
+```html
+<h2>Texto Invertido</h2>
+<bdo dir="rll">Este texto todo está invertido no formato RIGHT-TO-LEFT.</bdo>
+```
 
 # Módulo 02
 # Módulo 03
