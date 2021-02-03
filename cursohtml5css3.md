@@ -393,6 +393,62 @@ Para começo de conversa, BDO significa *bi-directional orerride*. Ao usar essa 
 <h2>Texto Invertido</h2>
 <bdo dir="rll">Este texto todo está invertido no formato RIGHT-TO-LEFT.</bdo>
 ```
+## #C09A01 - Listas OL e UL
+A linguagem HTML disponibiliza vários tipos de lista para produzirmos nosso conteúdo e deixá-lo mais claro e eficiente.  
+
+### Listas Ordenadas
+A HTML chama de **ordered lists** todas aquelas listas onde a ordem dos itens é algo muito importante.  
+> **Exemplos:**
+1. Um passo-a-passo para criar um bolo
+1. Uma lista de aprovados no vestibular
+1. Uma lista com os carros mais caros do mundo
+
+Para criar uma ***ordered list***, vamos usar a tag `<ol>` para delimitar a lista e `<li>` (***list item***) para identificar cada item da lista.  
+```html
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+  <li>Item 5</li>
+</ol>
+```
+
+IMPORTANTE! |
+:-- |
+Segundo a **W3C**, a tag `<ol>` é de fechamento obrigatório (ou seja, devemos sempre usar `</ol>`). Já a tag `<li>` tem o seu fechamento **opcional** a partir da HTML5.|
+
+#### Parâmetros da tag `<ol>`
+> **`type=""`**  
+> Onde configuramos o tipo de marcador da lista atual. As opções de valores para esse parâmetro são:
+- **1** - Valor padrão. Cria listas numeradas. ***Ex.: 1, 2, 3, 4, ...***
+- **A** - Cria listas alfabéticas em maiúsculas. ***Ex.: A, B, C, D, ...***
+- **a** - Cria listas alfabéticas em minúsculas. ***Ex.: a, b, c, d, ...***
+- **I** - Cria listas com algarismos romanos em maiúsculas. ***Ex.: I, II, III, IV, ...***
+- **i** - Cria listas com algarismos romanos em minúsculas. ***Ex.: i, ii, iii, iv, ...***  
+> **`start=""`**  
+> Podemos também indicar o início da contagem usuando esse parâmetro.  
+
+Por exemplo,  a tag **`<ol type="I" start="5">`** vai gerar itens numerados como ***V, VI, VII, VIII, IX, ...***
+### Lista Não Ordenadas
+**Unordered lists**, também chamadas de listas com marcadores, que são aquelas onde a ordem dos itens não influenciará no significado da lista. Ela é apenas uma ótima maneira para organizar os itens que não apresentam uam classificação necessariamente.  
+
+Para criar uma **unordered lists**, vamos usar a tag `<ul>` para delimitar a lista e a tag `<li>` para criar cada um dos seus itens internos.  
+```html
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+  <li>Item 5</li>
+</ul>
+```
+#### Parâmetros da tag `<ul>`
+>**`type=""`**  
+O marcador padrão é a bolinha preta totalmente preenchida, mas existe a opção de configurar a propriedade  da tag `<ul>` com os seguintes valores:
+- **disk** - padrão. Uma bola preta totalmente pintada.
+- **circle** - Uma bola com uma borda preta e sem preenchimento.
+- **square** - Um pequeno quadrado preto totalmente pintado.  
 
 # Módulo 02
 # Módulo 03
