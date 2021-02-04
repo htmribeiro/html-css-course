@@ -450,6 +450,78 @@ O marcador padrão é a bolinha preta totalmente preenchida, mas existe a opçã
 - **circle** - Uma bola com uma borda preta e sem preenchimento.
 - **square** - Um pequeno quadrado preto totalmente pintado.  
 
+## #C09A02 - Listas mistas e de definição
+### Misturando as coisas
+Podemos também criar listas mistas, configurando listas dentro de outras listas. Exemplo:  
+```html
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <ol type="a">
+    <li>Item 2.1</li>
+    <li>Item 2.2</li>
+    <li>Item 2.3</li>
+  </ol>
+  <li>Item 3</li>
+  <li>Item 4</li>
+  <li>Item 5</li>
+</ol>
+```  
+O resultado visual do código acima será semelhante ao que temos a seguir:  
+1. Item 1
+2. Item 2  
+  a. Item 2.1  
+  b. Item 2.2  
+  c. Item 2.3
+3. Item 3
+4. Item 4
+5. Item 5
+
+note que os itens da lista interna (a, b, c) estão deslocados para a direita em relação ao item 2, do qual essa sub-lista é filha.  
+
+[!DICA] | 
+:-- |
+Além de aninhar listas ordenadas, podemos juntar lisatas `<ul>` com `<ol>` e vice-versa. As listas internas sempre terão deslocamento interno para a direita. |
+
+### Lista de Definições
+É como se fosse um dicionário, temos os termos e as suas descrições. É uma lista sem demarcações, mas bem útil em alguns casos.  
+
+Toda lista de definições estã dentro de uma tag  
+- **`<dl>  </dl>` (definition list)**  
+
+Cada termo é um
+- **`<dt>  </dt>` (definition term)**
+
+E cada descrição é um
+- **`<dd>  </dd>` (definition description)**  
+
+IMPORTANTE! |
+:-- |
+Assim como os itens da lista, essas duas tags `<dt>` e `<dd>` tem o seu fechamento **opcional** segundo a referência oficial da HTML5.|  
+
+Exemplo simples que cria uma lista com três definições
+
+```html
+<dl>
+  <dt>HTML</dt>
+  <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+  
+  <dt>CSS</dt>
+  <dd>Linguagem de marcação para a criação do design de um site.</dd>
+  
+  <dt>JavaScript</dt>
+  <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+</dl>
+```
+O resultado visual dessa lista aplicado pelo navegador é:  
+
+HTML  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Linguagem de marcação para a criação do conteúdo de um site.  
+CSS  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Linguagem de marcação para a criação do design de um site.  
+JavaScript  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Linguagem de programação para a criação de interatividade de um site.  
+
 # Módulo 02
 # Módulo 03
 # Módulo 04
