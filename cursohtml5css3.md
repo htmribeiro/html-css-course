@@ -529,7 +529,7 @@ JavaScript
 
 Os *hyperlinks* são um dos conceitos mais antigos da históra da linguagem HTML. Eles permitem que você ligue um ponto a outro na *World Wide Web*. Toda vez que você está acessando um site e clica em um local para  ir para outra página, outro site pou até para baixar um arquivo, você está interagindo com um *hyperlink*.  
 
-Mecanismos de bussca se utilizam de hyperlinks para descobrir novos conteúdos. Por isso é tão importante conseguir links válidos de outros sites para o nosso próprio site.
+Mecanismos de busca se utilizam de hyperlinks para descobrir novos conteúdos. Por isso é tão importante conseguir links válidos de outros sites para o nosso próprio site.
 
 **APRENDA MAIS:** |
 :--|
@@ -557,6 +557,7 @@ Para criar um hyperlink, devemos utilizar a tag **`<a>`**.
 ```
 > Isso vai permitir avisar ao navegador e a softwares de tradução como lidr caso o visitante opte por traduzir automaticamente os conteúdos.
 
+## #C10A02 - Links Internos
 ### Mira no Alvo
 > página 4  
 
@@ -591,6 +592,7 @@ Esse comportamento é desejado quando o visitante vai continuar a visitar o noss
 - `author` indica que é um link para o site do autor do artigo atual
 - `external` indica que é um link para outro site que não faz parte do site atual
 - `nofollow` indica que é um link para um site não endossado, como link pago
+
 >```html
 ><a href="pagina2.html" target="_self" rel="next">
 >  Continuar navegando no site
