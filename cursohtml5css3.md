@@ -522,6 +522,92 @@ CSS
 JavaScript  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Linguagem de programação para a criação de interatividade de um site.  
 
+## #C10A01 - Links e Âncoras em HTML5
+
+### Joga a âncora, marujo
+> página 3  
+
+Os *hyperlinks* são um dos conceitos mais antigos da históra da linguagem HTML. Eles permitem que você ligue um ponto a outro na *World Wide Web*. Toda vez que você está acessando um site e clica em um local para  ir para outra página, outro site pou até para baixar um arquivo, você está interagindo com um *hyperlink*.  
+
+Mecanismos de bussca se utilizam de hyperlinks para descobrir novos conteúdos. Por isso é tão importante conseguir links válidos de outros sites para o nosso próprio site.
+
+**APRENDA MAIS:** |
+:--|
+Veja com mais detalhees como funcionam os algoritmos fundamentais de busca assistendo esse vídeo do próprio **Google**, onde o engenheiro **Mat Cutts** explica o mecanismo básico na ferramenta mais valiosa do mundo.|
+Google: https://youtu.be/BNHR6IQJGZs |
+
+[?] SEO - SEARCH ENGINEE OTMIZATION
+#### Criando uma âncora
+Para criar um hyperlink, devemos utilizar a tag **`<a>`**. 
+
+#### Principais atributos da tag `<a>`
+- **`href`**, que cria um referência hipertexto. Exemplo:
+>```html
+><h1>Vamos criar um link</h1>
+><a href="https://github.com/htmribeiro">Acesse o meu perfil GitHub</a>
+>```
+
+> Note que dentro do atributo **`href`**, o que colocamos foi uma **URL** completa para outro site.
+
+- **`hreflang`**, que permite indicar qual é o idioma principal do site para onde o link está desviando o fluxo de navegação.  
+```html
+<a href="https://www.w3schools.com/html/" hreflang="en">
+  Site da W3Schools (em inglês)
+</a>
+```
+> Isso vai permitir avisar ao navegador e a softwares de tradução como lidr caso o visitante opte por traduzir automaticamente os conteúdos.
+
+### Mira no Alvo
+> página 4  
+
+Por padrão, um *hyperlink*, abre o site de destino na mesma janela que está sendo navegado, ou seja, o conteúdo anterior vai deixar de ser exibido, mostrando o novo conteúdo.  
+
+Esse comportamento é desejado quando o visitante vai continuar a visitar o nosso site, apenas mudando de um documento para outro. 
+
+> Mas e quando um clique leva o visitante para outro site e provavelmente ele nunca mais voltará ao nosso?  
+
+- **`target`** - atributo controla onde o site de destino vai abrir
+#### Valores suportados pelo `target`
+- `_blank` vai abrir o link em uma nova janela em branco
+- `_self` vai abrir  o link na janela ou frame atual (padrão)
+- `_top` vai desfazer todos os frames e abrir o destino no navegador completo
+- `-parent` similar ao uso do `_top` em uma referência à janela pai
+- nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir  
+
+> Como o uso de frames é uma técnica quase em desuso, vamos nos basear apenas nas duas primeiras opções `_blank` e `_self`  
+>```html
+><a href="pagina2.html" target="_self">
+>  Continuar navegando no site
+></a>
+>
+><a href="https://github.com/htmribeiro" target="_blank">
+>  Abrir perfil GitHub em nova janela
+></a>
+>```
+- **`rel`** - indica qual é a natureza do destino do link
+#### Alguns Valores suportados pelo `rel`
+- `next` indica que o link é para a próxima parte do documento atual
+- `prev` indica que o link é para a parte anterior do documento atual
+- `author` indica que é um link para o site do autor do artigo atual
+- `external` indica que é um link para outro site que não faz parte do site atual
+- `nofollow` indica que é um link para um site não endossado, como link pago
+>```html
+><a href="pagina2.html" target="_self" rel="next">
+>  Continuar navegando no site
+></a>
+>``` 
+
+> Nesse código, chamamos de **link local** ou **link interno**, já que ele leva o visitante a outra página dentro do nosso próprio site. Note que não é necessário nem indicar a URL completa.
+
+>```html
+><a href="https://github.com/htmribeiro" target="_blank" rel="external">
+>  Abrir perfil GitHub em nova janela
+></a>
+>```
+
+> Nesse segundo código, o link vai nos levar par um outro site, o que chamamos **link externo**. Neste caso, devemos indicar a URL completa.
+
+
 # Módulo 02
 # Módulo 03
 # Módulo 04
