@@ -609,6 +609,31 @@ Esse comportamento é desejado quando o visitante vai continuar a visitar o noss
 
 > Nesse segundo código, o link vai nos levar par um outro site, o que chamamos **link externo**. Neste caso, devemos indicar a URL completa.
 
+## #C10A03 - Links para downloads
+### E para fazer Downloads?
+> página 5  
+
+A partir da versão HTML5, as âncoras recebem atributos especiais para efetuar dowloads de material em PDF ou de um arquivo ZIP qualquer.  e adicionar o atributo e .
+
+#### Atributo
+- **`download`** - Basta fazer o link diretamente para o arquivo que se deseja efetuar o download configurando o valor com o nome do arquivo a ser baixado  
+- **`type`** - Usado para indicar ao navegador que tipo de arquivo está sendo baixado.  
+>```html
+><a href="livro/meulivro.zip" download="meulivro.zip" type="application/pdf">
+>  Baixe aqui o PDF do meu livro
+></a>
+>```
+
+#### Alguns *media types* bem usados no nosso dia-a-dia:
+|||||||
+--|--|--|--|--|--|
+application/zip | video/mp4 | audio/mpeg | image/jpeg | text/html | font/ttf
+application/pdf | video/H264 | audio/aac | image/png | text/css | font/collection
+application/nsword | video/JPEG |audio/mp4| image/bmp| text/javascript | font/otf
+
+**LISTA DE MEDIA TYPES** |
+--|
+Se você quer saber o que escrever dentro do atributo `type` de uma âncora de hypertext, consulte a lista oficial da [IANNA.org](https://www.iana.org/assignments/media-types/media-types.xhtml)|
 
 # Módulo 02
 # Módulo 03
