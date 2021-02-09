@@ -486,7 +486,7 @@ Além de aninhar listas ordenadas, podemos juntar lisatas `<ul>` com `<ol>` e vi
 ### Lista de Definições
 É como se fosse um dicionário, temos os termos e as suas descrições. É uma lista sem demarcações, mas bem útil em alguns casos.  
 
-Toda lista de definições estã dentro de uma tag  
+Toda lista de definições estão dentro de uma tag  
 - **`<dl>  </dl>` (definition list)**  
 
 Cada termo é um
@@ -634,6 +634,12 @@ application/nsword | video/JPEG |audio/mp4| image/bmp| text/javascript | font/ot
 **LISTA DE MEDIA TYPES** |
 --|
 Se você quer saber o que escrever dentro do atributo `type` de uma âncora de hypertext, consulte a lista oficial da [IANNA.org](https://www.iana.org/assignments/media-types/media-types.xhtml)|
+
+## #C10A04 - Desafios propostos
+
+#### [Desafio 05 - desafio-social](desafios\modulo-01\d005\pdf\desafio-social.pdf)
+#### [Desafio 06 - Desafio das Tags](desafios\modulo-01\d006\pdf\desafio-tags.pdf)
+
 
 # Módulo 02
 # Módulo 03
