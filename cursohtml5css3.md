@@ -641,6 +641,18 @@ Se você quer saber o que escrever dentro do atributo `type` de uma âncora de h
 #### [Desafio 06 - Desafio das Tags](desafios\modulo-01\d006\pdf\desafio-tags.pdf)
 
 
+## #C11A01 - Imagens Dinâmicas
+### Seu site deve se adaptar ao tamanho da tela
+A mídia que mais sofre com a diversidade de dispositivos de acesso a sites, são as fotos. Se utilizarmos uma mesma foto que é exibida em uma TV para também ser exibida em um celular, teremos que redimensionar forçadamente a imagem com CSS.  
+Porém, essa prática não vai fazer com que o tamanho (em bytes) diminua também.  
+Isso acaba aumentando o consumo  de dados em dispositivos móveis e deixando seu site muito pesado.  
+
+**CUIDADO!** |
+:--|
+Sites lentos diminuem a **taxa de retenção** dos usuários, que ficam menos tempo acessando e podem prejudicar a indexação da sua página em mecanismos de busca como o **Google**. Veja o vídeo a seguir, um especialista em SEO (otimização para mecanismos de busca) falando sobre lentidão de sites, principalemente via 3G e 4G do celular.|
+Portal SEO: https://youtu.be/jWnMfvSdo1E |
+
+
 # Módulo 02
 # Módulo 03
 # Módulo 04
