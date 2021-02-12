@@ -536,7 +536,6 @@ Mecanismos de busca se utilizam de hyperlinks para descobrir novos conteúdos. P
 Veja com mais detalhees como funcionam os algoritmos fundamentais de busca assistendo esse vídeo do próprio **Google**, onde o engenheiro **Mat Cutts** explica o mecanismo básico na ferramenta mais valiosa do mundo.|
 Google: https://youtu.be/BNHR6IQJGZs |
 
-[?] SEO - SEARCH ENGINEE OTMIZATION
 #### Criando uma âncora
 Para criar um hyperlink, devemos utilizar a tag **`<a>`**. 
 
@@ -643,14 +642,68 @@ Se você quer saber o que escrever dentro do atributo `type` de uma âncora de h
 
 ## #C11A01 - Imagens Dinâmicas
 ### Seu site deve se adaptar ao tamanho da tela
+> página 3
+
 A mídia que mais sofre com a diversidade de dispositivos de acesso a sites, são as fotos. Se utilizarmos uma mesma foto que é exibida em uma TV para também ser exibida em um celular, teremos que redimensionar forçadamente a imagem com CSS.  
 Porém, essa prática não vai fazer com que o tamanho (em bytes) diminua também.  
 Isso acaba aumentando o consumo  de dados em dispositivos móveis e deixando seu site muito pesado.  
 
 **CUIDADO!** |
 :--|
-Sites lentos diminuem a **taxa de retenção** dos usuários, que ficam menos tempo acessando e podem prejudicar a indexação da sua página em mecanismos de busca como o **Google**. Veja o vídeo a seguir, um especialista em SEO (otimização para mecanismos de busca) falando sobre lentidão de sites, principalemente via 3G e 4G do celular.|
+Sites lentos diminuem a **taxa de rejeição** dos usuários, que ficam menos tempo acessando e podem prejudicar a indexação da sua página em mecanismos de busca como o **Google**. Veja o vídeo a seguir, um especialista em SEO - SEARCH ENGINEE OTMIZATION (otimização para mecanismos de busca) falando sobre lentidão de sites, principalemente via 3G e 4G do celular.|
 Portal SEO: https://youtu.be/jWnMfvSdo1E |
+
+## #C11A02 - Imagens que se adaptam sozinhas
+### Imagens Flexíveis
+> página 4
+
+Nosso primeiro passo no caminho de adaptar nosso conteúdo ao tamanho da tela vais ser aprender a gerar imagens de tamanhos diferentes.
+
+As tags **`<picture>`** e **`<source>`** - fará com que o navegador carregue a imagem certa para cada situação.  
+
+Para exemplo, vamos utilizar três imagens:
+- a menor com 300x300px
+- a média com 700x700px
+- a maior com 1000x1000px
+
+```html
+<picture>
+  <img src="foto-g.png" alt="A imagem flexível funciona">
+</picture>
+```
+A novidade aqui é que inserimos a tag `<img>` dentro da tag `<picture>`, que vai concentrar as outras fontes de imagem. Por padrão, a imagem **foto-g.png** (1000x1000px) será carregada.
+
+O problema vai começar a surgir quando a janela do navegador chegar perto dos 1000 pixels de largura, pois a foto não vai mais caber lá. Vamos agora adicionar uma linha para resolver esse problema:
+>```html
+><picture>
+>  <source media="(max-width: 1050px)" srcset="foto-m.png" type="image/png">
+>  <img src="foto-g.png" alt="A imagem flexível funciona">
+></picture>
+>```
+Note que a tag `<source>` possui três atributos:
+- **type** vai indicar o *media type* da imagem que usamos  
+- **srcset** vai configurar o nome da imagem que será carregada quando o tamanho indicado for atingido  
+- **media** indica o tamanho máximo a ser considerado para carregar a imagem indicada no atributo **srcset**.
+
+>**ATENÇÃO!** |
+>:-- |
+>Você pode até colocar o valor exato de 1000px na propriedade max-width, mas vai perceber que um valor ligeiramente acima vai gerar resultados mais interessantes.
+
+Recarrege seu código e mude o tamanho da janela do navegador. Você vai perceber que a imagem muda automaticamente conforme aumentamos ou diminuímos o tamanho da tela.
+
+Vamos continuar e acrescentar mais um `<source>` à nossa imagem:
+
+>```html
+><picture>
+>  <source media="(max-width: 750px)" srcset="foto-p.png" type="image/png">
+>  <source media="(max-width: 1050px)" srcset="foto-m.png" type="image/png">
+>  <img src="foto-g.png" alt="A imagem flexível funciona">
+></picture>
+>```
+É importante que exista uma ordem entre os `<source>`, e nessa nossa confiugração, os itens mais acima sejam os menores tamanhos para `max-width` e que os seguintes sejam os maiores, de forma crescente.  
+
+> **IMPORTANTE!**  
+> O último item dentro de `<picture>` deve ser a imagem padrão.
 
 
 # Módulo 02
