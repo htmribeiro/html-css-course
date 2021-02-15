@@ -740,24 +740,36 @@ Os formatos suportados são MPEG, WEBM e OGG, mas os dois primeiros são os que 
 **UM ÓTIMO CONVERSOR:** |
 :-- |
 Para gerar arquivos em vários formatos e usando codecs padronizados, recomendo usar o programa open source chamado [Handbrake](https://handbrake.fr/downloads.php), disponível para várias plataformas. |
+Utilizei o site [Convertio](https://convertio.co/pt/mp4-ogv/) para gerar o formato *.ogv* |
  
 
-**Navegador** | **Arquivos compatíveis**
-:--: | :--:
-Microsoft Edge | .mp4 .m4v
-Apple Safari | .mp4 .m4v
-Google Chrome | .mp4 .m4v .webm .ogv
-Mozilla Firefox | .webm .ogv
-Opera | .webm .ogv
+> **Navegador** | **Arquivos compatíveis**
+> :--: | :--:
+> Microsoft Edge | .mp4 .m4v
+> Apple Safari | .mp4 .m4v
+> Google Chrome | .mp4 .m4v .webm .ogv
+> Mozilla Firefox | .webm .ogv
+> Opera | .webm .ogv
 
+## #C11A05 - Vídeos em hospedagem própria
 ### E os vídeos
 > página 7  
 
 Para inserir um vídeo em nosso site, podemos utilizar a nova tag **`<video>`** da HTML5, ***caso o arquivo esteja hospedado no nosso próprio servidor***.
 ```html
-
+<video width="500" poster="imagens/pinguin_capa.jpg" controls>
+  <source src="midia/meu-video.mp4" type="video/mp4">
+  <source src="midia/meu-video.m4v" type="video/mp4">
+  <source src="midia/meu-video.webm" type="video/webm">
+  <source src="midia/meu-video.ogv" type="video/ogg">
+  <p>Infelizmente, seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+</video>
 ```
-
+Antes de mais nada, vamos criar a tag `<video>` e configurar alguns atributos importantes:  
+-  **`width`** vai indicar a largura que o vídeo vai ter na tela. Nesse exemplo, 600px.
+- **`poster`** configura uma imagem que vai aparecer como uma capa, enquanto o visitante não aperta o play para reproduzir o vídeo.
+- **`controls`** vai configurar se os controles de vídeo vão aparecer na parte inferior da mídia. Por padrão, os cotroles não aparecerão, mas basta colocar a palavra `controls` na tag `<video>`.
+- **`autoplay`** diz para o navegador se o vídeo vai começãr a tocar automaticamente, assim que a página for carregada.
 
 # Módulo 02
 # Módulo 03
