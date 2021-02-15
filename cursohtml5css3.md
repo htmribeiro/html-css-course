@@ -144,7 +144,7 @@ Para uma pesquisa mais precisa e atualizada, acesse o site da [emojipedia.org](h
 > [Resolução](exercicios\ex002\index.html)
 ## #C06A01 - Direitos Autorais
 
-### Sites que contém imagens livres para uso
+### Sites que contém imagens e vídeos livres para uso
 > https://www.pexels.com/pt-br/
 > https://unsplash.com/
 
@@ -729,6 +729,34 @@ Vamos analisar os principais atributos da tag `<audio>`:
 - O atributo **`autoplay`**, quando inserido, vai iniciar a reprodução do áudio assim que a página for carregada.  
 
 Dentro da tag `<audio>`, adicionamos vários `<source>` com formatos diferentes do mesmo áudio. Coloque na parte de cima o seu formato favorito. Os demais só serão carregados caso o de cima falhe. Caso todos falhem, criamos um parágrafo que permite o download do arquivo MP3 para ouvir no player padrão do dispositivo.  
+
+## #C11A04 - Formatos de vídeo para seu site
+
+### Que formatos são esses?
+Vídeos possuem formatos e codecs e isso pode tornar o vídeo inviável de ser reproduzido pela maioria dos  navegadores na maioria dos dispositivos. É preciso prestar muita atenção nesse pequeno detalhe.
+
+Os formatos suportados são MPEG, WEBM e OGG, mas os dois primeiros são os que possuem maior compatibilidade com os navegadores atualmente.  
+
+**UM ÓTIMO CONVERSOR:** |
+:-- |
+Para gerar arquivos em vários formatos e usando codecs padronizados, recomendo usar o programa open source chamado [Handbrake](https://handbrake.fr/downloads.php), disponível para várias plataformas. |
+ 
+
+**Navegador** | **Arquivos compatíveis**
+:--: | :--:
+Microsoft Edge | .mp4 .m4v
+Apple Safari | .mp4 .m4v
+Google Chrome | .mp4 .m4v .webm .ogv
+Mozilla Firefox | .webm .ogv
+Opera | .webm .ogv
+
+### E os vídeos
+> página 7  
+
+Para inserir um vídeo em nosso site, podemos utilizar a nova tag **`<video>`** da HTML5, ***caso o arquivo esteja hospedado no nosso próprio servidor***.
+```html
+
+```
 
 
 # Módulo 02
