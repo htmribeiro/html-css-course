@@ -705,6 +705,31 @@ Vamos continuar e acrescentar mais um `<source>` à nossa imagem:
 > **IMPORTANTE!**  
 > O último item dentro de `<picture>` deve ser a imagem padrão.
 
+## #C11A03 - Colocando áudio no seu site
+
+### Vamos falar sobre áudio
+> página 5  
+
+Com o HTML5, temos a facilidade em compartilhar áudio nos nossos sites sem depender necessariamente de JavaScript ou plugins extras. A partir de agora, basta uma tag **`<audio>`** e alguns **`<source>`** para fazer seu site ser capaz de tocar qualquer áudio.  
+```html
+<audio>
+  <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+  <source src="midia/guanacast-33.ogg" type="audio/ogg">
+  <source src="midia/guanacast-33.wav" type="audiio/wav">
+  <p>seu navegador não suporta áudio <a href="midia/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg">Clique aqui</a>para baixar o arquivo MP3.</p>
+</audio>
+```
+Vamos analisar os principais atributos da tag `<audio>`:  
+
+- O atributo **`preload`** indica se o áudio será pré-carregado ou não e aceita três valores:
+  - **metadata** vai carregar apenas as informações sobre o arquivo (tamanho, tempo, informações de direitos, etc)
+  - **none** não vai carregar absolutamente nada até que o usuário clique no botõ play ou um script inicie a reprodução
+  - **auto** (padrão) vai carregar o arquivo de áudio inteiro assim que a página for carregada, mesmo que o usuário nunca aperte o play
+- O atributo **`controls`** vai apresentar o player na tela. Caso seja colocado na tag `<audio>`, o controle será transparente e o usuário não poderá interagir com ele.
+- O atributo **`autoplay`**, quando inserido, vai iniciar a reprodução do áudio assim que a página for carregada.  
+
+Dentro da tag `<audio>`, adicionamos vários `<source>` com formatos diferentes do mesmo áudio. Coloque na parte de cima o seu formato favorito. Os demais só serão carregados caso o de cima falhe. Caso todos falhem, criamos um parágrafo que permite o download do arquivo MP3 para ouvir no player padrão do dispositivo.  
+
 
 # Módulo 02
 # Módulo 03
