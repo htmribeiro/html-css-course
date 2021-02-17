@@ -771,6 +771,22 @@ Antes de mais nada, vamos criar a tag `<video>` e configurar alguns atributos im
 - **`controls`** vai configurar se os controles de vídeo vão aparecer na parte inferior da mídia. Por padrão, os cotroles não aparecerão, mas basta colocar a palavra `controls` na tag `<video>`.
 - **`autoplay`** diz para o navegador se o vídeo vai começãr a tocar automaticamente, assim que a página for carregada.
 
+## #C11A06 - Incorporação de vídeo externo
+> página 8
+### Hospedar seus próprios vídeos pode ser caro
+Quando colocamos vídeos no nosso próprio servidor, podemos passar por problemas com alto consumo de banda, site lento e incompatibilidades com alguns navegadores por conta dos codecs.
+### E agora, quem poderá nos defender?
+Euuuuuu! Ou melhor, o **YouTube** ou o **Vimeo**! Esses são serviços para a hospedagem de vídeos que vai evitar consumir nossos próprios recursos de host contratado.
+### E dá pra incorporar com esses aí em HTML?
+Para incorporar vídeos que você subiu no **YouTube** ou **Vimeo**, existem recursos que te dão o código pronto em HTML5.
+
+- No **YouTube**, abra o vídeo que você quer incorporar e clique no link COMPARTILHAR que fica abaixo do título.
+
+- No **Vimeo**, o procedimento é bastante semelhante. Abra seu painel de controle do serviço e vá para a sua lista de vídeos hospedados. Na lista de mídias armazenadas, clique no botão com reticências e escolha a opção **Incorporação**.
+
+O código HTML personalizado vai aparecer em uma nova janela de contexto, incluindo um botão que permite COPIAR o código com a tag do **`<iframe>`** que vai aparecer diretamente na sua página. Volte ao seu editor de código e cole a tag no seu arquivo HTML que vai apresentar o vídeo.
+
+
 # Módulo 02
 # Módulo 03
 # Módulo 04
