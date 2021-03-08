@@ -806,6 +806,42 @@ O código HTML personalizado vai aparecer em uma nova janela de contexto, inclui
 
 #### [Desafio 09 - desafio-videos](desafios\modulo-01\d009\pdf\desafio-videos.pdf)
 
+## #C12A01 - Estilos CSS inline
+### A forma mais simples de aplicar estilo: CSS inline style
+Essa é a técnica mais básica para aplicar estilos em áreas pontuais em nosso site, que é usando as **CSS dentro de parâmetros de HTML5**.
+
+```html
+<body>
+  <h1>Capítulo 1</h1>
+  <h2>Capítulo 1.1</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  <h2>Capítulo 1.2</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  <h1>Capítulo 2</h1>
+  <h2>Capítulo 2.1</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+</body>
+```
+
+Vamos começar nos focando na tag `<body>` e aplicando um estilo diferente ao corpo da página. Adicione o parâmetro **`style`** e digite as duas declarações de `font-family` e `color`, conforme apresentado a seguir:
+
+```html
+<body style="font-family: Arial, Helvetica, sans-serif; color: blue;">
+```
+:warning: Atenção `&#xU+26A0;`|
+--|
+Tudo deve ser seguido exatamente como demostrado acima, inclusive com letras maiúsclas e minúsculas. Não esquecendo os **ponto e vírgula** para separar as declarações|
+
+:warning: CUIDADO!|
+--|
+A tag `<font color="blue">` ***NÃO É MAIS ACEITA*** para as especificações da HTML5!|
+
+Vamos fazer mais uma alteração, dessa vez na linha do primeiro título `<h1>` do nosso código:
+```html
+<h1 style="color: Red;">Capítulo 1<h1>
+```
+
+Note que apenas o Capítulo 1 ficou vermelho, o Capítulo 2 - que também é um `<h1>` - não teve alteração alguma. Isso acontece pois estamos fazendo **configurações pontuais** usando CSS.
 
 # Módulo 02
 # Módulo 03
