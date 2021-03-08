@@ -681,9 +681,9 @@ O problema vai começar a surgir quando a janela do navegador chegar perto dos 1
 ></picture>
 >```
 Note que a tag `<source>` possui três atributos:
-- **type** vai indicar o *media type* da imagem que usamos  
-- **srcset** vai configurar o nome da imagem que será carregada quando o tamanho indicado for atingido  
 - **media** indica o tamanho máximo a ser considerado para carregar a imagem indicada no atributo **srcset**.
+- **srcset** vai configurar o nome da imagem que será carregada quando o tamanho indicado for atingido  
+- **type** vai indicar o *media type* da imagem que usamos  
 
 >**ATENÇÃO!** |
 >:-- |
@@ -782,9 +782,29 @@ Para incorporar vídeos que você subiu no **YouTube** ou **Vimeo**, existem rec
 
 - No **YouTube**, abra o vídeo que você quer incorporar e clique no link COMPARTILHAR que fica abaixo do título.
 
+```html
+<iframe width="480" height="270" src="https://www.youtube.com/embed/o73ABi-so6k?start=69" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+```
+
 - No **Vimeo**, o procedimento é bastante semelhante. Abra seu painel de controle do serviço e vá para a sua lista de vídeos hospedados. Na lista de mídias armazenadas, clique no botão com reticências e escolha a opção **Incorporação**.
 
+```html
+<iframe src="https://player.vimeo.com/video/191954993?portrait=0" width="480" height="270" frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+</iframe>
+```
+
 O código HTML personalizado vai aparecer em uma nova janela de contexto, incluindo um botão que permite COPIAR o código com a tag do **`<iframe>`** que vai aparecer diretamente na sua página. Volte ao seu editor de código e cole a tag no seu arquivo HTML que vai apresentar o vídeo.
+
+## #C11A07 - Desafios propostos
+#### [Desafio 07 - desafio-social](desafios\modulo-01\d007\pdf\desafio-imagem-flexivel.pdf)
+
+#### [Desafio 08 - desafio-social](desafios\modulo-01\d008\pdf\desafio-navegacao.pdf)
+
+#### [Desafio 09 - desafio-social](desafios\modulo-01\d009\pdf\desafio-videos.pdf)
 
 
 # Módulo 02
