@@ -800,11 +800,11 @@ Para incorporar vídeos que você subiu no **YouTube** ou **Vimeo**, existem rec
 O código HTML personalizado vai aparecer em uma nova janela de contexto, incluindo um botão que permite COPIAR o código com a tag do **`<iframe>`** que vai aparecer diretamente na sua página. Volte ao seu editor de código e cole a tag no seu arquivo HTML que vai apresentar o vídeo.
 
 ## #C11A07 - Desafios propostos
-#### [Desafio 07 - desafio-social](desafios\modulo-01\d007\pdf\desafio-imagem-flexivel.pdf)
+#### [Desafio 07 - desafio-desafio-imagem-flexivel](desafios\modulo-01\d007\pdf\desafio-imagem-flexivel.pdf)
 
-#### [Desafio 08 - desafio-social](desafios\modulo-01\d008\pdf\desafio-navegacao.pdf)
+#### [Desafio 08 - desafio-navegacao](desafios\modulo-01\d008\pdf\desafio-navegacao.pdf)
 
-#### [Desafio 09 - desafio-social](desafios\modulo-01\d009\pdf\desafio-videos.pdf)
+#### [Desafio 09 - desafio-videos](desafios\modulo-01\d009\pdf\desafio-videos.pdf)
 
 
 # Módulo 02
