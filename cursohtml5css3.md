@@ -806,8 +806,12 @@ O código HTML personalizado vai aparecer em uma nova janela de contexto, inclui
 
 #### [Desafio 09 - desafio-videos](desafios\modulo-01\d009\pdf\desafio-videos.pdf)
 
-## #C12A01 - Estilos CSS inline
+## #C12A01 - Estilos CSS inline (HTML style)
+
+> página 3
+
 ### A forma mais simples de aplicar estilo: CSS inline style
+
 Essa é a técnica mais básica para aplicar estilos em áreas pontuais em nosso site, que é usando as **CSS dentro de parâmetros de HTML5**.
 
 ```html
@@ -842,6 +846,37 @@ Vamos fazer mais uma alteração, dessa vez na linha do primeiro título `<h1>` 
 ```
 
 Note que apenas o Capítulo 1 ficou vermelho, o Capítulo 2 - que também é um `<h1>` - não teve alteração alguma. Isso acontece pois estamos fazendo **configurações pontuais** usando CSS.
+
+## #C12A02 - Estilos CSS Internos (CSS style)
+
+### Estilizando de maneira mais interessante: CSS Internal Style
+
+> Página 6
+Para aplicar estilos de forma mais dinâmica e prática, podemos adicionar uma tag **`<style>`** dentro da área **`<head>`** do nosso documento HTML local.
+
+```html
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos Locais / Internos</title>
+    <style>
+        body {
+            background-color: lightsteelblue;
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+        }
+        
+        h1 {
+            color: green;
+        }
+    </style>
+</head>
+```
+:warning: **Atenção!** |
+--|
+A tag `<style>` deve ser dentro da área `<head>` do seu documento HTML5. Se você colocá-la em qualquer outro local, como dentro da tag `<body>`, o resultado até pode funcionar, mas seu código estará fora dos padrões estabelecidos pela W3C. Siga sempre as regras!|
+
+> **As configurações pontuais (HTML style) vão prevalecer sobre as configurações gerais (CSS style)**
 
 # Módulo 02
 # Módulo 03
