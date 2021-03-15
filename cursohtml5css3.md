@@ -1,4 +1,16 @@
-# Módulo 01 
+# Módulo 01 | Primeiros passos HTML + CSS
+
+> Resumo:
+
+* Conceitos básicos
+* preparação do ambiente
+* semântica da HTML5
+* textos
+* títulos
+* ligações (links)
+* multimídia
+* estilos
+
 ## #C03A01 - A diferença entre HTML, CSS e JavaScript
 
 > **HTML** - **H**yper**T**ext **M**arkup **L**anguage  
@@ -945,15 +957,39 @@ CSS **inline**  | procure evitar | 1
 
 Ainda é possível misturar as três técnicas, criando um CSS exteno para as cofigurações globais, CSS interno para a s configurações locais de um documento e CSS inline para pequenas configurações pontuais.
 
-# Módulo 02
-# Módulo 03
-# Módulo 04
-# Módulo 05
-# Módulo 06
-# Módulo 07
-# Módulo 08
-# Módulo 09
-# Módulo 10
-# Módulo 11
-# Módulo 12
-# Módulo 13
+# Módulo 02 | Deixando as coisas mais bonitas
+
+> Resumo
+
+* Fundamentos do design
+* psicologia das cores
+* tipografia
+* elementos CSS
+* modelo de caixas
+* wireframe
+* responsividade
+
+# Módulo 03 | Colocando um protótipo no ar
+
+> Resumo
+
+* Versionamento de software
+* hospedagem de sites estáticos
+* tabelas
+
+# Módulo 04 | Aprofundando os conhecimentos
+
+> Resumo
+
+* Quadros em linha
+* formulários
+* media queries
+* mobile first
+
+# Módulo 05 | Novas tecnologias
+
+> Resumo
+
+* Flexbox
+* Grid Layout
+* projeto final
