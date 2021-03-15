@@ -878,6 +878,73 @@ A tag `<style>` deve ser dentro da área `<head>` do seu documento HTML5. Se voc
 
 > **As configurações pontuais (HTML style) vão prevalecer sobre as configurações gerais (CSS style)**
 
+## #C12A03 - Estilos CSS externos
+
+### A técnica mais versátil: CSS external style
+
+> página 7
+
+Manter as folha de estilo fora do código HTML, além de uma maior organização faz com que tudo seja reaproveitado de maneira mais eficiente nas outras páginas do nosso site. Para isso, utilizamos a tag **`<link>`** especialmente configurada para trabalhar com arquivos externos de estilo. Essa tag deve ser colocada dentro da área `<head>` do seu documento HTML.
+
+```html
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS External</title>
+  </head>
+</html>
+```
+
+**A linha como o `<link>` pode estar em qualquer linha, contanto que seja dentro da área `<head>`.** Particularmente, sempre procuro adicionar essa configuração após a tag `<tilte>` do documento atual.
+
+Após inserir a linha de código do `link:css`, você observará que ao passar o mouse sobre o nome do arquivo **`style.css`**, existe um atalho *"Siga o link"* clicando sobre o link, o VSCode vai perguntar se você quer que ele crie o arquivo para você. Clique em **Sim** ou **Ok** para aceitar a ajuda e seu aruqivo será criado automaticamente.
+
+Agora é só adicionar os seletores e todas as suas respectivas declarações nesse arquivo separado para que elas possam ser aplicadas ao documento que contiver um **`<link>`** para ele.
+
+```css
+@charset "UTF-8";
+/* Regra @charset caso haja problemas com acentuação */
+
+body {
+    background-color: lightgoldenrodyellow;
+    color: chocolate;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    color: maroon;
+    background-color: goldenrod;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+}
+```
+
+Na **linha 1**, colocamos uma **regra** em CSS, que vai indicar a compatibilidade de codificação com o padráo UTF-8, assim como fizemos com o arquivo HTML5. Essa linha não é obrigatória e normalmente nem vai aparecer na maioria dos seus arquivos de configurações de estilo, mas saiba que ela existe.
+
+Na **linha 2**, adicionamos um **comentário** para facilitar a documentação do arquivo. Os comentários - assim como vimos em HTML - só servirão de explicação para que o desenvolvedor entenda o funcionamento de uma determinada linha ou trecho de código. O navegador não vai considerar nada que está entre os símbolos `/*` e `*/` em CSS.
+
+Nas demais linhas, fizemos as configurações dos seletores, da mesma maneira que criamos com as outras duas técnicas apresentadas no capítulo.
+
+### Qual técnica eu escolho para usar?
+
+Nesse capítulo, aprendemos as três técnicas de uso de folhas de estilo em cascata: **inline**, **interna** e **externa**. Mas em que situação devemos escolher cada um dos formatos?
+
+De forma resumida, para fixar na cabeça:
+
+Tipo | Descrição | Ordem de precedência
+:--:|:--:|:--:
+CSS **externo** | use sempre que puder | 3
+CSS **interno** | use para pequenas configurações | 2
+CSS **inline**  | procure evitar | 1
+
+Ainda é possível misturar as três técnicas, criando um CSS exteno para as cofigurações globais, CSS interno para a s configurações locais de um documento e CSS inline para pequenas configurações pontuais.
+
 # Módulo 02
 # Módulo 03
 # Módulo 04
